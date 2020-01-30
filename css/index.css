@@ -65,8 +65,9 @@ h1, h2, h3, h4, h5 {
 
 /* Your code starts here! */
 body{
-    width: 890px;
-    margin-left:30%;
+    width: auto;
+    max-width: 900px;
+    margin: 5px auto 5px auto;
 }
 
 a{
@@ -78,7 +79,7 @@ h1{
     font-size: 80px;
 }
 /*Nav bar*/
-.nav_bar{
+header{
 
     margin-bottom: 30px;
     display: flex;
@@ -98,7 +99,7 @@ a{
 /* Top Content Section */
 .top-content {
     margin-top: 80px;
-    padding-bottom: 80px;
+   margin-bottom: 80px;
     display:flex;
     width: 100%;
     text-align: center;
@@ -106,6 +107,8 @@ a{
 
 .top-content-box {
     width: 40%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .top-content img {
@@ -230,6 +233,111 @@ footer{
 }
 
 .services-header-img{
-    margin-top 20px;
+    margin-top: 20px;
     margin-bottom: 10px;
+}
+
+#great-idea-other{
+    display: none;
+}
+
+/* tablet mode */
+@media (max-width:800px){
+    .top-content-box{
+        margin: 0 auto 0 auto;
+        justify-self: center;
+    }
+    #codeImage{
+        display: none;
+        width: 1px;
+        height: 1px;
+    }
+    .top-content{
+        text-align: center;
+        justify-content: space-between;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #great-idea-other{
+        display: block;
+        justify-self: center;
+        align-self: center;
+        margin: 0 auto 0 auto;
+    }
+
+    #great-idea-desktop{
+        display: none;
+    }
+
+}
+
+/* mobile mode */
+@media (max-width:500px ) {
+
+    header{
+        display: block;
+    }
+
+    .nav_bar a{
+        padding-bottom: 10px;
+        margin: 10px auto 10px auto;
+        display:block;
+        border-bottom: 1px black solid;
+    }
+
+    #great-idea-desktop{
+        display:none;
+    }
+
+    #great-idea-other{
+        display: block;
+        border-bottom: 1px black solid;
+    }
+
+    .middlecenter{
+        width: 95%;
+        margin-left: 1%;
+        margin-right: 1%;
+        display: block;
+        max-width: 500px;
+        height: auto;
+    }
+
+    .middlecenter img{
+        width: 95%;
+        max-width: 250px;
+    }
+
+    .bot-content1{
+        display: block;
+        width: 100%;
+        
+    }
+
+    .bot-content2{
+        display: block;
+        width: 100%;
+    }
+    .bottomBox{
+        display: block;
+        margin-top: 20px;
+    }
+
+    .top-content{
+        text-align: center;
+        width: 95%;
+        
+    }
+
+    .top-content-box{
+        text-align: center;
+        margin-right: auto;
+        margin-left: auto;
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+
+    
+
 }
